@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:history_trade/src/models/user/user_model.dart';
 import 'package:provider/provider.dart';
-import 'package:history_trade/src/components/buttons/custom_button.dart';
+import 'package:history_trade/src/components/widgets/buttons/custom_button.dart';
 import 'package:history_trade/src/components/container/custom_container_bagraound_color.dart';
 import 'package:history_trade/src/presemtation/adding_data/addingIncome_screen/addingIncome_screen.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';

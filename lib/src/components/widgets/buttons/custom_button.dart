@@ -17,7 +17,7 @@ class CustomButton extends StatelessWidget {
     return SizedBox(
       width: width,
       height: height,
-      child: GestureDetector(
+      child: InkWell(
         onTap: onPressed,
         child: Container(
           decoration: BoxDecoration(

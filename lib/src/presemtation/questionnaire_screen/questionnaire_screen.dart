@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:history_trade/src/components/buttons/custom_button.dart';
+import 'package:history_trade/src/components/widgets/buttons/custom_button.dart';
 import 'package:history_trade/src/components/container/custom_container_bagraound_color.dart';
 import 'package:history_trade/src/presemtation/adding_data/create_user/create_user.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
