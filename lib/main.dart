@@ -1,21 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:history_trade/src/models/user/user_model.dart';
+import 'package:history_trade/src/presemtation/splash_view/splash_view.dart';
+import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:t89/src/presentation/splash_screeen/splash_screen.dart';
 
 void main() {
-  runApp(const AnalytiQ());
+  runApp(const MyApp());
 }
 
-class AnalytiQ extends StatelessWidget {
-  const AnalytiQ({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ResponsiveSizer(builder: (context, orientation, screenType) {
-      return const MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: SplashScreen(),
-      );
-    });
+    return MultiProvider(
+      providers: [ChangeNotifierProvider(create: (_) => CreateUserModel())],
+      child: ResponsiveSizer(
+        builder: (context, orientation, screenType) {
+          return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData(
+              fontFamily: 'Solway',
+            ),
+            home: const SplashScreen(),
+          );
+        },
+      ),
+    );
   }
 }
